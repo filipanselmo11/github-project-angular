@@ -1,5 +1,8 @@
 <div class="home__component">
-  <mat-grid-list cols="3" gutterSize="9px">
+  <h1 *ngIf="loading">
+    Loading Projects
+  </h1>
+  <mat-grid-list cols="3" gutterSize="9px" #elseblock>
     <mat-grid-tile></mat-grid-tile>
   </mat-grid-list>
 </div>
