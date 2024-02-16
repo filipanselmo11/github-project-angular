@@ -2,7 +2,12 @@
   <h1 *ngIf="loading">
     Loading Projects
   </h1>
-  <mat-grid-list cols="3" gutterSize="9px" #elseblock>
-    <mat-grid-tile></mat-grid-tile>
+  <mat-grid-list cols="3" #elseblock>
+    <mat-grid-tile *ngFor="let item of listProjects">
+      <app-card
+        title="{{ item.title}}"
+        technologie="{{ item.technologie }}"
+        ispublic="{{ item.ispublic ? 'publico': 'privado' }}"></app-card>
+    </mat-grid-tile>
   </mat-grid-list>
 </div>

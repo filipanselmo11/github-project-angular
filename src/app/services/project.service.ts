@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { ProjectInterface } from '../types/project';
+import { Projects } from '../types/project';
 
 @Injectable({
   providedIn: 'root'
@@ -12,8 +12,8 @@ export class ProjectService {
 
   constructor(private httpClient: HttpClient) { }
 
-  listarProjects(): Observable<ProjectInterface[]>{
-    return this.httpClient.get<ProjectInterface[]>(
+  listarProjects(): Observable<Projects>{
+    return this.httpClient.get<Projects>(
       `${this.baseUrl}/projects`
     );
   }

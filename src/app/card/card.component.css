@@ -1,0 +1,9 @@
+.card__component {
+  max-width: 300px;
+  background-color: #C2185B;
+  color: #FFFFFF;
+}
+
+.mat-mdc-card-subtitle {
+  color: #FFFFFF;
+}
