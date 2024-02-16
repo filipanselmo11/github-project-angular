@@ -1,9 +1,26 @@
 .card__component {
-  max-width: 300px;
+  width: 360px;
+  height: 164px;
   background-color: #C2185B;
+}
+
+.mat-mdc-card-title {
+  font-size: 14px;
   color: #FFFFFF;
 }
 
 .mat-mdc-card-subtitle {
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-wrap: wrap;
   color: #FFFFFF;
 }
+
+.mat-mdc-card-content p {
+  color: #FFFFFF;
+}
+
+.mdc-card__media {
+  margin-right: -4px;
+}
+

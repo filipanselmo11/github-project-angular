@@ -2,7 +2,7 @@
   <h1 *ngIf="loading">
     Loading Projects
   </h1>
-  <mat-grid-list cols="3" #elseblock>
+  <mat-grid-list cols="3" rowHeight="199px" gutterSize="10px" #elseblock>
     <mat-grid-tile *ngFor="let item of listProjects">
       <app-card
         title="{{ item.title}}"
