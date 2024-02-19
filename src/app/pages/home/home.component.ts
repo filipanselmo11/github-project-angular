@@ -4,10 +4,11 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { ProjectInterface, Projects } from '../../types/project';
 import { ProjectService } from '../../services/project.service';
 import { CardComponent } from '../../card/card.component';
+import { ProgressCircularComponent } from '../../progress-circular/progress-circular.component';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [MatGridListModule, NgFor, NgIf, CardComponent],
+  imports: [MatGridListModule, NgFor, NgIf, CardComponent, ProgressCircularComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

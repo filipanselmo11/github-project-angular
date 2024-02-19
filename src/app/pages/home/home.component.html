@@ -1,13 +1,14 @@
 <div class="home__component">
   <h1 *ngIf="loading">
-    Loading Projects
+   <app-progress-circular></app-progress-circular>
   </h1>
   <mat-grid-list cols="3" rowHeight="199px" gutterSize="10px" #elseblock>
     <mat-grid-tile *ngFor="let item of listProjects">
       <app-card
         title="{{ item.title}}"
         technologie="{{ item.technologie }}"
-        ispublic="{{ item.ispublic ? 'publico': 'privado' }}"></app-card>
+        ispublic="{{ item.ispublic ? 'publico': 'privado' }}"
+        urlimage="{{ item.urlimage }}"></app-card>
     </mat-grid-tile>
   </mat-grid-list>
 </div>

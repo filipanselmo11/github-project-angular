@@ -3,6 +3,7 @@ export interface ProjectInterface {
   title: string,
   technologie: string,
   ispublic: string,
+  urlimage: string
 }
 
 export interface Projects {

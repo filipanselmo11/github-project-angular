@@ -1,0 +1,9 @@
+.progress-circular__component {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin-top: 50px;
+  height: 60px;
+}
+

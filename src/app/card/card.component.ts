@@ -12,4 +12,5 @@ export class CardComponent {
   @Input() title!: string;
   @Input() technologie!: string;
   @Input() ispublic!: string;
+  @Input() urlimage!: string;
 }
