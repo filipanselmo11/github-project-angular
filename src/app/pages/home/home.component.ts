@@ -22,8 +22,8 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this.projectService.listarProjects().subscribe((res) => {
       this.loading = true;
-      // console.log('RES ', res);
-      this.listProjects = res.projects;
+      console.log('RES ', res);
+      this.listProjects = res;
       this.loading = false;
     });
   }
